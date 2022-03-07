@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precios y Sabores</title>
+    <link rel="shortcut icon" href="https://media.istockphoto.com/vectors/golden-birthday-cake-icon-vector-id1220359953?k=20&m=1220359953&s=170667a&w=0&h=_B4b6mEuKIJ-SggrZOqE1gAm7pJKtuyz0ITMXdtk9ZA=">  
+    <style>
+
+    body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url("pastel5.jpg");
+            background-size: 450px 470px;                             
+        }
+           /* Estilo de header */
+    header {        
+            background-color:bisque;   
+            font-family:'Brush Script MT'  ;
+            font-size: 35px;
+            text-align: center;
+            color: #ffba6a;     
+        } 
+
+    p {     
+            padding: 30px ;
+            background-color: bisque;       
+            text-align: center;
+            font-family:'Brush Script MT' ;
+            font-size: 50px;
+            color: #cb9bde;
+        }
+
+        nav {
+            padding: 30px ;
+            float: center;
+            text-align: center;
+         }
+        nav li{
+            display:inline-block;
+            font-family:'Brush Script MT'  ;
+            font-size: 40px;
+            color: #800020;
+            }
+        
+        table{
+            background-color: bisque;
+            table-layout: fixed;
+            width: 2000px;
+            }
+
+        th, tr, td {
+            border: 1px solid #800020;
+            width: 10px;
+            word-wrap: break-word;
+            font-family:'Brush Script MT'  ;
+            font-size: 25px;
+            text-align: center;
+            }
+        label{
+            background-color: bisque;
+            font-family:'Brush Script MT'  ;
+            font-size: 25px;
+            color: #800020;
+            text-align: center;
+        }
+
+       /* Estilo de footer */
+    footer {
+            font-family:'Brush Script MT'  ;
+            font-size: 20px;
+            text-align: center;
+            color: #800020;
+        }
+        /* Responsive layout */
+    </style>
+</head>
+
+<body>
+    <header>
+            <h1>Saboores, Precios y Combinaciones Disponibles Hasta Este Momento</h1>       
+    </header>
+    <br>
+    <br>
+    <br>
+    <div align="center">
+        <table>
+            <tr>
+                <th>Sabor</th>
+                <th>Precio</th>         
+            </tr>
+            <tr>
+                <td>Frutos del Bosque</td>
+                <td>$750</td>
+            </tr>
+            <tr>
+                <td>Macadamia de Nuez</td>
+                <td>$650</td>
+            </tr>
+            <tr>
+                <td>Moca Suprema</td>
+                <td>$550</td>
+            </tr>
+        </table>
+    </div>
+    
+    <p>Seleccione la combinacion que más le agrade</p>
+    <label for="refresco">Elija su primer sabor</label><br>
+    <input list="refresco">
+    <datalist id="refresco">
+        <option value="Frutos del Bosque">
+        <option value="Macadamia de Nuez">
+        <option value="Moca Suprema">
+    </datalist>
+    <br>
+    <br>
+    <p>Rellene el siguiente Formulario</p>
+    <form action="/accion.js" id="form1" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+        <input type="submit" value="Submit">
+        <input type="reset">
+    </form>
+<br>
+<br>
+    <footer>
+        <div align="center">
+            <table>
+                <tr>
+                    <th style=width:15px>
+                        <h2>Redes Sociales</h2>
+                        <dl>
+                            <dt>Facebook: Pasteleria de Oro</dt>
+                            <dt>Instagram: @EpocadeOro</dt>
+                            <dt>Correo: ps_epocaoro@negocios.com</dt>
+                        </dl>
+                    </th>
+                    <th>
+                        <h2>Teléfonos</h2>
+                        <dl>
+                            <dt>5519283764</dt>
+                            <dt>5591827346</dt>
+                            <dt>5539261847</dt>
+                        </dl>
+                    </th>
+                    <th>
+                        <h2>Ubicación</h2>
+                        <dl>
+                            <dt>Calle Hegel, 610</dt>
+                            <dt>Col. Polanco, Miguel Hidalgo</dt>
+                            <dt>CDMX,México</dt>
+                        </dl>
+                    </th>
+                </tr>
+            </table>     
+        </div>     
+        
+    </footer>
+    
+
+</body>
+
+</html>
